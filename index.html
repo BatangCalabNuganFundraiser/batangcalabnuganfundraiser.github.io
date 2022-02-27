@@ -1,6 +1,12 @@
 <html>
 	<head>
 		<style>
+			html{
+				background-image: url('https://i0.wp.com/batangcalabnugan.org/wp-content/uploads/2016/10/about-euro-raccolti.jpg');
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-size: cover;
+			}
 			.containerDiv{
 				top:0;
 				bottom:0;
@@ -23,11 +29,61 @@
 				align-items: center;
 				justify-content: center;
 			}
+			.QRCodeDiv{}
+			.blurbHeaderDiv{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				font-size: 2em;
+				font-weight: bold;
+				background: #abd68d;
+				border-radius: 0.25em;
+				padding: 1em;
+				margin: 1em;
+			}
+			.blurbBodyDiv{
+				border-radius: 0.5em;
+				padding: 1em;
+				margin: 1em;
+				font-size: 1em;
+				background: #abd68d;
+			}
+			.blurbFooterDiv{
+				border-radius: 0.25em;
+				padding: 1em;
+				margin: 1em;
+				font-size: 2em;
+				font-weight: bold;
+				background: #abd68d;
+			}
 		</style>
 	</head>
 	<body>
 		<div class='containerDiv'>
-			<div class='blurbDiv'>Here is where a blurb about the charity would go, and below is the donate button.</div>
+			<div class='blurbDiv'>
+				<div class='blurbHeaderDiv'>
+					PLEASE HELP SUPPORT OUR NON-PROFIT GIRLS SHELTER <br/>
+					<br/>
+					<div style="font-weight: normal;font-size: 0.8em;">And Donate to the Fund-Raiser Bike Ride From Greece to Norway</div>
+				</div>
+				<div class='blurbBodyDiv'>
+					The Bata ng Calabnugan, Inc NGO was founded in 2005, by Italian national Francesco Izzo and his wife Flora Aguit, who is from the Philippines, along with a host of volunteers with the idea of <strong>providing a safe and caring environment for orphaned and at-risk girls</strong> in the Philippines. The girls come from a variety of backgrounds including those who have been orphaned, were living on the street, have experienced physical or sexual abuse, or have mental or physical disabilities.  We provide:
+					<ul>
+						<li>A comfortable <strong>family-style living environment</strong> with lots of love and individual attention</li>
+						<li><strong>Healthy meals</strong> that include our own organic eggs and homegrown fruits and vegetables.</li>
+						<li><strong>Education</strong> from kindergarten through college. Since we know how important education is for our girls futures we choose to send them to private school to maximize their learning potential.</li>
+						<li><strong>Immunizations and medical care.</strong></li>
+						<li><strong>Extra curricular activities</strong> such as hiking, swimming, sports, camping and travel help give the girls a well-rounded life experience.</li>
+
+					</ul>
+				</div>
+				<div class='blurbFooterDiv'>
+					The annual cost of the orphanage in providing adequate nutrition is approximately one million pesos (approx $20,000). <br/>
+					The dream of this ride is to guarantee daily food and meals for the shelter for 3 years.
+				</div>
+			</div>
 			<div class='donateButtonDiv'>
 				<form action="https://www.paypal.com/donate" method="post" target="_top">
 					<!-- Identify your business so that you can collect the payments. -->
@@ -38,7 +94,7 @@
 				      	<input type="hidden" name="item_number" value="Fall Cleanup Campaign">
 				       	<input type="hidden" name="currency_code" value="USD">
 			        	<!-- Display the payment button. -->
-					<input type="image" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Donate">
+					<input type="image" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Donate" width="256">
 					<img alt="" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
 				</form>
 			</div>
