@@ -6,6 +6,9 @@
 				background-repeat: no-repeat;
 				background-attachment: fixed;
 				background-size: cover;
+				padding:4em;
+				padding-top:1em;
+				font-family: sans-serif;
 			}
 			.containerDiv{
 				top:0;
@@ -28,8 +31,14 @@
 				flex-direction: row;
 				align-items: center;
 				justify-content: center;
+				text-decoration: none;
 			}
-			.QRCodeDiv{}
+			.QRCodeDiv{
+				top: 0.25em;
+				right: 0.25em;
+				position: absolute;
+				z-index: 1000;
+			}
 			.blurbHeaderDiv{
 				display: flex;
 				flex-direction: column;
@@ -38,7 +47,7 @@
 				text-align: center;
 				font-size: 2em;
 				font-weight: bold;
-				background: #abd68dcc;
+				background: #abd68de0;
 				border-radius: 0.25em;
 				padding: 1em;
 				margin: 1em;
@@ -48,7 +57,7 @@
 				padding: 1em;
 				margin: 1em;
 				font-size: 1em;
-				background: #abd68dcc;
+				background: #abd68de0;
 			}
 			.blurbFooterDiv{
 				border-radius: 0.25em;
@@ -56,8 +65,105 @@
 				margin: 1em;
 				font-size: 2em;
 				font-weight: bold;
-				background: #abd68dcc;
+				background: #abd68de0;
 			}
+			.donateButton{
+				color: black;
+				text-decoration: none;
+				padding: 0.25em;
+				padding-left: 1em;
+				padding-right: 1em;
+				font-size: 2em;
+				border-radius: 2em;
+				background-color: gold;
+				font-weight: bold;
+				top: 0.25em;
+				left: 0.25em;
+				position: absolute;
+				z-index: 1000;
+			}
+			.sliderContainer{
+				position: relative;
+				width: 100%;
+				height: 35em;
+				background: #abd68de0;
+				border-radius: 0.5em;
+			}
+			.slider {
+				position: relative;
+				height: 100%;
+				background: #00000000;
+				overflow: hidden;
+			}
+			.slide,
+			.slide img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+			}
+			.slide {
+				transform: translateX(100%);
+				-webkit-animation: slide 40s infinite linear;
+			}
+			.slide:nth-child(2) {
+				-webkit-animation-delay: 10s;
+			}
+			.slide:nth-child(3) {
+				-webkit-animation-delay: 20s;
+			}
+			.slide:nth-child(4) {
+				-webkit-animation-delay: 30s;
+			}
+			.slide:nth-child(5) {
+				-webkit-animation-delay: 40s;
+			}
+			.slide:nth-child(6) {
+				-webkit-animation-delay: 50s;
+			}
+			.slide:nth-child(7) {
+				-webkit-animation-delay: 60s;
+			}
+			.slide:nth-child(8) {
+				-webkit-animation-delay: 70s;
+			}
+			.slide:nth-child(9) {
+				-webkit-animation-delay: 80s;
+			}
+			.slide:nth-child(10) {
+				-webkit-animation-delay: 90s;
+			}
+			.slide:nth-child(11) {
+				-webkit-animation-delay: 100s;
+			}
+			.slide:nth-child(12) {
+				-webkit-animation-delay: 110s;
+			}
+			.slide:nth-child(13) {
+				-webkit-animation-delay: 120s;
+			}
+			.slide:nth-child(14) {
+				-webkit-animation-delay: 130s;
+			}
+			.slide:nth-child(15) {
+				-webkit-animation-delay: 140s;
+			}
+			@-webkit-keyframes slide {
+				5% {
+					transform: translateX(0);
+				}
+				25% {
+					transform: translateX(0);
+				}
+				30% {
+					transform: translateX(-100%);
+				}
+				100% {
+					transform: translateX(-100%);
+				}    
+			}	
+
 		</style>
 	</head>
 	<body>
@@ -84,25 +190,50 @@
 					The dream of this ride is to guarantee daily food and meals for the shelter for 3 years.
 				</div>
 			</div>
-			<div class='donateButtonDiv'>
-				<a href="https://www.islangbata.it/sostienici/donate-now"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Donate" width="256" /></a>
-				<!--
-				<form action="https://www.paypal.com/donate" method="post" target="_top">
-				  	<input type="hidden" name="business" value="donations@kcparkfriends.org">
-				    	<input type="hidden" name="no_recurring" value="0">
-				     	<input type="hidden" name="item_name" value="Friends of the Park">
-				      	<input type="hidden" name="item_number" value="Fall Cleanup Campaign">
-				       	<input type="hidden" name="currency_code" value="USD">
-					<input type="image" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Donate" width="256">
-					<img alt="" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
-				</form>
-				-->
+
+			<div class="sliderContainer">
+				<div class='QRCodeDiv'>
+					<img src='QRCodeLink.png' height="108" width="87"/>
+				</div>
+				<div class='donateButtonDiv'>
+					<a href="https://wwwislangbata.it/sostienici/donate-now">
+						<div class="donateButton">Donate</div>
+					</a>
+				</div>
+		<div class="slider">
+			<div class="slide" style="background: url('https://i0.wp.com/batangcalabnugan.org/wp-content/uploads/2016/10/about-euro-raccolti.jpg') no-repeat center"></div>
+			<div class="slide" style="background: url('https://i0.wp.com/batangcalabnugan.org/wp-content/uploads/2016/10/storie-roselyn-assistente-sociale.jpg') no-repeat center">
 			</div>
-			<br />
-			<div class='QRCodeDiv'>
-				<img src='QRCodeLink.png'/>
+			<div class="slide" style="background: url('https://i0.wp.com/batangcalabnugan.org/wp-content/uploads/2016/10/storie-paula-pamela1.jpg') no-repeat center">
+			</div>
+			<div class="slide" style="background: url('https://i0.wp.com/batangcalabnugan.org/wp-content/uploads/2016/10/progetti-filippine-progetto-salute.jpg') no-repeat center">
+			</div>
+			<div class="slide" style="background: url('https://i0.wp.com/batangcalabnugan.org/wp-content/uploads/2016/10/bambine-piccole-casa-famiglia.jpg') no-repeat center">
+			</div>
+			<div class="slide" style="background: url('https://i0.wp.com/batangcalabnugan.org/wp-content/uploads/2016/10/about-collabora.jpg') no-repeat center">
+			</div>
+			<div class="slide" style="background: url('https://i0.wp.com/batangcalabnugan.org/wp-content/uploads/2016/10/Mariz-odia-la-scuola.jpg') no-repeat center">
+			</div>
+			<div class="slide" style="background: url('https://i0.wp.com/batangcalabnugan.org/wp-content/uploads/2016/10/Bata-ng-Calabnugan-gallery11.jpg') no-repeat center">
+			</div>
+			<div class="slide" style="background: url('https://i0.wp.com/batangcalabnugan.org/wp-content/uploads/2016/10/Bata-ng-Calabnugan-gallery10.jpg') no-repeat center">
+			</div>
+			<div class="slide" style="background: url('https://i0.wp.com/batangcalabnugan.org/wp-content/uploads/2016/10/Bata-ng-Calabnugan-gallery9.jpg') no-repeat center">
+			</div>
+			<div class="slide" style="background: url('https://i0.wp.com/batangcalabnugan.org/wp-content/uploads/2016/10/Bata-ng-Calabnugan-gallery8.jpg') no-repeat center">
+			</div>
+			<div class="slide" style="background: url('https://i0.wp.com/batangcalabnugan.org/wp-content/uploads/2016/10/Bata-ng-Calabnugan-4.jpg') no-repeat center">
+			</div>
+			<div class="slide" style="background: url('https://i0.wp.com/batangcalabnugan.org/wp-content/uploads/2016/10/Bata-ng-Calabnugan-3.jpg') no-repeat center">
+			</div>
+			<div class="slide" style="background: url('https://i0.wp.com/batangcalabnugan.org/wp-content/uploads/2016/10/Bata-ng-Calabnugan-2.jpg') no-repeat center">
+			</div>
+			<div class="slide" style="background: url('https://i0.wp.com/batangcalabnugan.org/wp-content/uploads/2016/10/Bata-ng-Calabnugan-1.jpg') no-repeat center">
 			</div>
 		</div>
+		</div>
+	</div>
+
 		<script>
 		</script>
 	</body>
